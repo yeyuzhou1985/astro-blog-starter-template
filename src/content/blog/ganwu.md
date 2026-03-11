@@ -2,7 +2,7 @@
 title: "于迷茫处，寻心安之路"
 description: "于迷茫处，寻心安之路"
 pubDate: "2026/03/11"
-heroImage: "/blog-placeholder-2.jpg"
+heroImage: "/mimang.png"
 ---
 
 <h5>人到四十一，猝不及防迎来失业，曾经安稳的生活骤然失衡，迷茫如浓雾般将人包裹。站在人生的中途，回望半生奔波，瞻望前路未知，难免心生疲惫，甚至怀疑过往的努力与抉择。</h5>
