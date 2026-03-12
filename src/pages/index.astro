@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import VideoPlayer from "../components/VideoPlayer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -22,7 +23,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				起心动念皆是因，当下所受皆是果。
 			</p>
 	
-	
+	<VideoPlayer
+        src="/videos/demo.mp4"
+        poster="/images/poster.jpg"
+        autoplay={false}
+        loop={false}
+    />
 		
 		</main>
 		<Footer />
