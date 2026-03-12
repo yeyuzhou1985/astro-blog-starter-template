@@ -1,0 +1,52 @@
+---
+// src/components/VideoPlayer.astro
+interface Props {
+    src: string;          // 视频地址
+    poster?: string;      // 封面图
+    width?: string | number; // 宽度
+    height?: string | number; // 高度
+    autoplay?: boolean;   // 自动播放
+    loop?: boolean;       // 循环播放
+    muted?: boolean;      // 静音
+}
+
+const {
+    src,
+    poster = "",
+    width = "100%",
+    height = "auto",
+    autoplay = false,
+    loop = false,
+    muted = false
+} = Astro.props;
+---
+
+<div class="video-player">
+    <video
+        controls
+        poster={poster}
+        width={width}
+        height={height}
+        autoplay={autoplay}
+        loop={loop}
+        muted={muted}
+        preload="metadata"
+    >
+        <source src={src} type="video/mp4">
+        您的浏览器不支持 HTML5 视频播放。
+    </video>
+</div>
+
+<style>
+    .video-player {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+    }
+    video {
+        width: 100%;
+        height: inherit;
+        object-fit: contain;
+        border-radius: 6px;
+    }
+</style>
