@@ -5,4 +5,4 @@ pubDate: "2026/03/10"
 heroImage: "/blog-placeholder-3.jpg"
 ---
 
-穷啊！用免费的就好！
+用免费的就好！
